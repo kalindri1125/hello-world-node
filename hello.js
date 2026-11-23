@@ -1,5 +1,7 @@
 function greet(name) {
-    return `Hello, ${name}!`;
+    return `Hello, ${name}! Welcome to Node.js.`;
 }
 
-console.log(greet("World"));
+const name = process.argv[2] || "World";
+
+console.log(greet(name));
